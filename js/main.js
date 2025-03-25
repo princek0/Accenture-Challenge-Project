@@ -20,7 +20,37 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Setup home page carousel
     initHomeCarousel();
+
+    // Setup theme toggle
+    initThemeToggle();
 });
+
+// Handle theme toggle between light and dark mode
+function initThemeToggle() {
+    const themeToggle = document.getElementById('theme-toggle');
+    if (!themeToggle) return;
+    
+    // Check for saved theme preference or use preferred color scheme
+    const savedTheme = localStorage.getItem('theme');
+    const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    
+    // Apply saved theme if exists, otherwise use system preference
+    if (savedTheme === 'dark' || (savedTheme === null && prefersDarkScheme)) {
+        document.body.classList.add('dark-mode');
+        themeToggle.checked = true;
+    }
+    
+    // Toggle theme when switch is clicked
+    themeToggle.addEventListener('change', function() {
+        if (this.checked) {
+            document.body.classList.add('dark-mode');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            document.body.classList.remove('dark-mode');
+            localStorage.setItem('theme', 'light');
+        }
+    });
+}
 
 // Handle mobile navigation menu
 function initMobileNavigation() {
