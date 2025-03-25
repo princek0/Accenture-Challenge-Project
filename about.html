@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meet our team of technology career advisors and get in touch with us">
+    <title>About Us</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav id="main-nav">
+            <div class="logo">Tech Careers</div>
+            <button class="menu-toggle" aria-label="Toggle navigation menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="about.html" class="active" aria-current="page">About Us</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>About Our Team</h1>
+                <p class="lead">Meet the passionate individuals behind FutureTech Careers</p>
+            </div>
+        </section>
+
+        <section class="team-section">
+            <div class="container">
+                <h2>Our Team</h2>
+                <p>We're the team behind Future Tech Careers and are commited to helping school leavers discover and pursue rewarding careers in the tech industry. Feel free to get in touch with us below.</p>
+                
+                <div class="carousel-container">
+                    <button class="carousel-button carousel-button-prev" aria-label="Previous employee">
+                        &larr;
+                    </button>
+                    
+                    <div class="carousel-track">
+                        <div class="employee-card">
+                            <img src="/images/prince.png" alt="Prince Kumar" class="employee-image">
+                            <h3 class="employee-name">Prince Kumar</h3>
+                            <p class="employee-bio">Prince is a gap year student who recently got funding to build an AI B2B start-up creating telecommunications fraud detection software. During high school he built a bio-tech start-up, published a research paper on climate change, and represented the junior England chess squad internationally. He's going to be starting an undergraduate degree in mathematics at the University of Oxford and hopes to become a tech founder.</p>
+                        </div>
+                        
+                        <div class="employee-card">
+                            <img src="" alt="Andrew" class="employee-image">
+                            <h3 class="employee-name">Andrew Long</h3>
+                            <p class="employee-bio">Andrew is a Newcastle college graduate who holds a Lvl 3 diploma in IT at distinction level, he is a skilled QA tester that has worked with companies and game developers. Other than professional achievements he has supported foster care and helped in both technical and internal manner, he has a blend of academic and technical experience. making him impactful in a tech area.</p>
+                        </div>
+                        
+                        <div class="employee-card">
+                            <img src="" alt="Oliver" class="employee-image">
+                            <h3 class="employee-name">Oliver Noble</h3>
+                            <p class="employee-bio">Oliver is an aspiring programmer and software engineer, holding a CertHE in Computer Science. In his spare time he enjoys customizing his emacs with lisp code, volunteering with the Tyne Theatre's restoration project, and listening to music that sounds bad. He hopes to further expand his knowledge of computing and gain more experience in a real-world setting.</p>
+                        </div>
+                        
+                        <div class="employee-card">
+                            <img src="" alt="Matthew" class="employee-image">
+                            <h3 class="employee-name">Matthew Burton</h3>
+                            <p class="employee-bio">Matt has been a Swimming Teacher working with schools, organisations and the general public to deliver a variety of water based academic programs from Swim England’s Learn to Swim Program, School Swimming and Rookie Lifeguards. He has experience in planning and executing academic programs and analysing their effectiveness and adapting based on student and customer needs. With an enthusiasm for problem solving and a great enjoyment of challenges, he is looking forward to engaging in a future in the tech industry.</p>
+                        </div>
+                        
+                        <div class="employee-card">
+                            <img src="" alt="Seth" class="employee-image">
+                            <h3 class="employee-name">Seth Mangundu</h3>
+                            <p class="employee-bio">Seth is a Luton Sixth Form College graduate with A-levels in Math's, Further Math’s and Computer Science at AAB respectively. He is also a University of Birmingham Summer Award recipient and effective communicator with certifications in debating. Along with academic and technical experience, he has a passion for software development.</p>
+                        </div>
+                    </div>
+                    
+                    <button class="carousel-button carousel-button-next" aria-label="Next employee">
+                        &rarr;
+                    </button>
+                    
+                    <div class="carousel-indicators">
+                        <button class="carousel-indicator active" aria-label="Go to employee 1" data-index="0"></button>
+                        <button class="carousel-indicator" aria-label="Go to employee 2" data-index="1"></button>
+                        <button class="carousel-indicator" aria-label="Go to employee 3" data-index="2"></button>
+                        <button class="carousel-indicator" aria-label="Go to employee 4" data-index="3"></button>
+                        <button class="carousel-indicator" aria-label="Go to employee 5" data-index="4"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Have questions about technology careers or our resources? Send us a message and we'll get back to you.</p>
+                
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                        <p class="error-message" id="name-error"></p>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                        <p class="error-message" id="email-error"></p>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <p class="error-message" id="message-error"></p>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+                
+                <div id="form-result" class="form-result" aria-live="polite"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Tech Careers</h3>
+                    <p>Helping school leavers navigate technology career paths.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="cookies.html">Cookie Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: <a href="mailto:info@techcareers.org">info@techcareers.org</a></p>
+                    <p>Phone: +44 123 456 7890</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Future Tech Careers. All rights reserved.</p>
+                <p><a href="accessibility.html">Accessibility Statement</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
