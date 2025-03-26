@@ -20,8 +20,8 @@
   --medium-gray: #bdc3c7;
   
   /* Dark mode colors */
-  --dm-primary-color: #b347ff;
-  --dm-primary-dark: #8000cc;
+  --dm-primary-color: #a100ff;
+  --dm-primary-dark: #a100ff;
   --dm-dark-color: #f5f5f5;
   --dm-light-color: #121212;
   --dm-text-color: #f5f5f5;
@@ -100,7 +100,7 @@ body.dark-mode .menu-toggle .bar {
 }
 
 body.dark-mode .intro-banner {
-  background-color: #1a1a1a;
+  background-color: var(--dm-primary-dark);
 }
 
 body.dark-mode section:nth-child(even) {
