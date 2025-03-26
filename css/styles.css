@@ -389,6 +389,14 @@ header {
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--primary-dark);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 70px;
+  width: auto;
 }
 
 .menu-toggle {
@@ -1138,6 +1146,10 @@ footer {
   .code-example {
     font-size: 0.8rem;
     padding: var(--spacing-sm);
+  }
+  
+  .logo img {
+    height: 28px;
   }
 }
 
